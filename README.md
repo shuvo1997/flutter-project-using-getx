@@ -2,6 +2,26 @@
 
 A new Flutter project.
 
+## Folder Structure
+```
+└───app
+    ├───data
+    ├───modules
+    │   ├───counter
+    │   │   ├───bindings
+    │   │   ├───controllers
+    │   │   └───views
+    │   ├───home
+    │   │   ├───bindings
+    │   │   ├───controllers
+    │   │   └───views
+    │   └───splash_screen
+    │       ├───bindings
+    │       ├───controllers
+    │       └───views
+    └───routes
+
+```
 ## Getting Started
 
 This project is a starting point for a Flutter application.
