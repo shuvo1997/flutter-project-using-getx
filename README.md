@@ -1,6 +1,6 @@
-# myproject
+## Exploring-Getx
 
-A new Flutter project.
+A new Flutter project using getx state management. The folder are stucrtured according to getx-pattern. 
 
 ## Folder Structure
 ```
