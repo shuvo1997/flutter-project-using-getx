@@ -2,8 +2,12 @@ import 'package:get/get.dart';
 
 import '../modules/counter/bindings/counter_binding.dart';
 import '../modules/counter/views/counter_view.dart';
+import '../modules/fetch_list/bindings/fetch_list_binding.dart';
+import '../modules/fetch_list/views/fetch_list_view.dart';
 import '../modules/home/bindings/home_binding.dart';
 import '../modules/home/views/home_view.dart';
+import '../modules/localization/bindings/localization_binding.dart';
+import '../modules/localization/views/localization_view.dart';
 import '../modules/splash_screen/bindings/splash_screen_binding.dart';
 import '../modules/splash_screen/views/splash_screen_view.dart';
 
@@ -22,13 +26,23 @@ class AppPages {
     ),
     GetPage(
       name: _Paths.COUNTER,
-      page: () => CounterView(),
+      page: () => const CounterView(),
       binding: CounterBinding(),
     ),
     GetPage(
       name: _Paths.SPLASH_SCREEN,
       page: () => const SplashScreenView(),
       binding: SplashScreenBinding(),
+    ),
+    GetPage(
+      name: _Paths.FETCH_LIST,
+      page: () => FetchListView(),
+      binding: FetchListBinding(),
+    ),
+    GetPage(
+      name: _Paths.LOCALIZATION,
+      page: () => LocalizationView(),
+      binding: LocalizationBinding(),
     ),
   ];
 }

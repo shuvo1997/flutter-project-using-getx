@@ -6,11 +6,11 @@ import 'package:myproject/app/modules/splash_screen/views/splash_screen_view.dar
 
 import '../controllers/home_controller.dart';
 
-class HomeView extends GetView<HomeController> {
+class HomeView extends StatelessWidget {
   HomeView({Key? key}) : super(key: key);
 
-  CounterController counterController = Get.find();
-  HomeController homeController = Get.put(HomeController());
+  final counterController = Get.find<CounterController>();
+  final controller = Get.find<HomeController>();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -67,12 +67,12 @@ class HomeView extends GetView<HomeController> {
                 (data) => Column(
                       children: [
                         Text(
-                            'The current theme is ${homeController.isDarkTheme.value}'),
+                            'The current theme is ${controller.isDarkTheme.value}'),
                         Switch(
-                            value: homeController.isDarkTheme.value,
+                            value: controller.isDarkTheme.value,
                             onChanged: (val) {
-                              homeController.isDarkTheme.value = val;
-                              homeController.changeCurrentTheme();
+                              controller.isDarkTheme.value = val;
+                              controller.changeCurrentTheme();
                             }),
                       ],
                     ),
@@ -80,9 +80,9 @@ class HomeView extends GetView<HomeController> {
             TextButton(
                 onPressed: () {
                   // Get.back();
-                  Get.to(SplashScreenView());
+                  Get.to(const SplashScreenView());
                 },
-                child: Text('Go to Splash Screen')),
+                child: const Text('Go to Splash Screen')),
           ],
         ),
       ),

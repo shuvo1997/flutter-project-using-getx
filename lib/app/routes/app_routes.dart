@@ -6,6 +6,8 @@ abstract class Routes {
   static const HOME = _Paths.HOME;
   static const COUNTER = _Paths.COUNTER;
   static const SPLASH_SCREEN = _Paths.SPLASH_SCREEN;
+  static const FETCH_LIST = _Paths.FETCH_LIST;
+  static const LOCALIZATION = _Paths.LOCALIZATION;
 }
 
 abstract class _Paths {
@@ -13,4 +15,6 @@ abstract class _Paths {
   static const HOME = '/home';
   static const COUNTER = '/counter';
   static const SPLASH_SCREEN = '/splash-screen';
+  static const FETCH_LIST = '/fetch-list';
+  static const LOCALIZATION = '/localization';
 }

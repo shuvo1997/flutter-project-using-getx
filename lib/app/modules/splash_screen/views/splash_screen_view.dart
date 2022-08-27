@@ -17,20 +17,20 @@ class SplashScreenView extends GetView<SplashScreenController> {
       body: Center(
         child: Column(
           children: [
-            Text(
+            const Text(
               'SplashScreenView is working',
               style: TextStyle(fontSize: 20),
             ),
             TextButton(
                 onPressed: () {
-                  Get.off(CounterView());
+                  Get.off(const CounterView());
                 },
-                child: Text('Get off ')),
+                child: const Text('Get off ')),
             TextButton(
                 onPressed: () {
-                  Get.offAll(CounterView());
+                  Get.offAll(const CounterView());
                 },
-                child: Text('Get off all')),
+                child: const Text('Get off all')),
           ],
         ),
       ),
